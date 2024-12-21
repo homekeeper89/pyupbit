@@ -13,7 +13,7 @@ EXCHANGE API
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     balance = upbit.get_balances()
     print(balance)
@@ -32,7 +32,7 @@ EXCHANGE API
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     chance = upbit.get_chance("KRW-BTC")
     print(chance)
@@ -60,7 +60,7 @@ EXCHANGE API
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     uuid = "uuid"  # 취소하고자하는 주문의 uuid
     cancel_result = upbit.cancel_order(uuid)
@@ -85,7 +85,7 @@ EXCHANGE API
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     currency = "KRW"    # 조회하려는 화폐 정보
     withdraw_list = upbit.get_withdraw_list(currency)
@@ -101,7 +101,7 @@ EXCHANGE API
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     uuid = "uuid"       # 조회하려는 출금 UUID
     currency = "KRW"    # 조회하려는 화폐 정보
@@ -133,7 +133,7 @@ EXCHANGE API
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     currency = "KRW"    # 조회하려는 화폐 정보
     deposit_list = upbit.get_deposit_list(currency)
@@ -150,7 +150,7 @@ EXCHANGE API
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     uuid = "uuid"       # 조회하려는 입금 UUID
     currency = "KRW"    # 조회하려는 화폐 정보
@@ -191,7 +191,7 @@ API 키 목록 및 만료 일자를 조회한다.
 
     access = "access key"  
     secret = "secret key"
-    upbit = Upbit(access, secret)
+    upbit = pyupbit.Upbit(access, secret)
 
     api_key_info = upbit.get_api_key_list()
     print(api_key_info)
